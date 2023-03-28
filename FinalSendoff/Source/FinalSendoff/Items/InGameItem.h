@@ -60,7 +60,7 @@ protected:
 	
 	virtual void BeginPlay() override;
 
-private:
+protected:
 
 	UPROPERTY(EditAnywhere)
 	TObjectPtr<UStaticMeshComponent> ItemMesh;
