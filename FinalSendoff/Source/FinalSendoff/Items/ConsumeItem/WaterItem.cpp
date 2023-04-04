@@ -10,3 +10,8 @@ void AWaterItem::InventoryAction_Implementation()
 	if(HealableCharacter == nullptr)	return;
 	HealableCharacter->HealThirst(HealAmount);
 }
+
+void AWaterItem::RemoveFromInventoryAction_Implementation()
+{
+	
+}

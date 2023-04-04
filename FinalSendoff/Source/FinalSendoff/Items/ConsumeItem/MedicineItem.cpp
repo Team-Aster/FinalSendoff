@@ -10,3 +10,8 @@ void AMedicineItem::InventoryAction_Implementation()
 	if(HealableCharacter == nullptr)	return;
 	HealableCharacter->HealMedicine(HealAmount);
 }
+
+void AMedicineItem::RemoveFromInventoryAction_Implementation()
+{
+	
+}

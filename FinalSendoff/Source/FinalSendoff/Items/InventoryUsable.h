@@ -21,7 +21,8 @@ class FINALSENDOFF_API IInventoryUsable
 	GENERATED_BODY()
 
 public:
-	
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Inventory Action")
 	void InventoryAction();
+	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Inventory Action")
+	void RemoveFromInventoryAction();
 };

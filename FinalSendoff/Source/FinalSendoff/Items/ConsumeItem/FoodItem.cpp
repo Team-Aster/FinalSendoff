@@ -10,3 +10,8 @@ void AFoodItem::InventoryAction_Implementation()
 	if(HealableCharacter == nullptr)	return;
 	HealableCharacter->HealHungry(HealAmount);
 }
+
+void AFoodItem::RemoveFromInventoryAction_Implementation()
+{
+	
+}

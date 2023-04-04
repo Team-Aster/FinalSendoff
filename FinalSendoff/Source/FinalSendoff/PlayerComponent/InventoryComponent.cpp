@@ -25,10 +25,12 @@ void UInventoryComponent::AddItemToInventory(AInGameItem* Item)
 	}
 	Item->SetItemState(EItemState::EIS_InInventory);
 	ItemList.Add(Item);
+	InventoryChangedEvent.Broadcast(ItemList);
 }
 
 void UInventoryComponent::DropItemFromInventory(AInGameItem* Item)
 {
 	Item->SetItemState(EItemState::EIS_Dropped);
 	ItemList.Remove(Item);
+	InventoryChangedEvent.Broadcast(ItemList);
 }

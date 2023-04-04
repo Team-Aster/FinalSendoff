@@ -16,6 +16,6 @@ class FINALSENDOFF_API AFoodItem : public AConsumeItem, public IInventoryUsable
 	GENERATED_BODY()
 
 public:
-
 	virtual void InventoryAction_Implementation() override;
+	virtual void RemoveFromInventoryAction_Implementation() override;
 };
