@@ -70,8 +70,6 @@ void AFinalSendoffCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	// "Gamepad" versions are for devices that we choose to treat as a rate of change, such as an analog joystick
 	PlayerInputComponent->BindAxis("Turn Right / Left Mouse", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("Look Up / Down Mouse", this, &APawn::AddControllerPitchInput);
-	PlayerInputComponent->BindAxis("Turn Right / Left Gamepad", this, &AFinalSendoffCharacter::TurnAtRate);
-	PlayerInputComponent->BindAxis("Look Up / Down Gamepad", this, &AFinalSendoffCharacter::LookUpAtRate);
 }
 
 void AFinalSendoffCharacter::OnPrimaryAction()
